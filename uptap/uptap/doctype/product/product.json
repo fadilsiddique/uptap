@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:pppccc",
  "creation": "2025-05-19 21:49:48.654808",
@@ -17,6 +18,7 @@
   "brand",
   "standard_selling_rate",
   "product_description_section",
+  "product_image",
   "description",
   "product_type",
   "variants_tab",
@@ -125,12 +127,18 @@
    "depends_on": "eval:doc.has_variant==\"1\" || doc.product_type==\"Variant\"",
    "fieldname": "section_break_gdge",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product_image",
+   "fieldtype": "Attach Image",
+   "label": "Product Image"
   }
  ],
  "grid_page_length": 50,
+ "image_field": "product_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-19 23:21:17.984463",
+ "modified": "2025-05-19 23:43:47.812055",
  "modified_by": "Administrator",
  "module": "Uptap",
  "name": "Product",
