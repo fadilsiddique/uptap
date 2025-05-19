@@ -122,7 +122,7 @@
    "options": "Product"
   },
   {
-   "depends_on": "eval:doc.has_variant==\"1\"",
+   "depends_on": "eval:doc.has_variant==\"1\" || doc.product_type==\"Variant\"",
    "fieldname": "section_break_gdge",
    "fieldtype": "Section Break"
   }
@@ -130,7 +130,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-19 22:23:27.701828",
+ "modified": "2025-05-19 23:21:17.984463",
  "modified_by": "Administrator",
  "module": "Uptap",
  "name": "Product",
