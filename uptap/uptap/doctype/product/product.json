@@ -1,0 +1,162 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:pppccc",
+ "creation": "2025-05-19 21:49:48.654808",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_info_section",
+  "active",
+  "pppccc",
+  "ppnn",
+  "uom",
+  "column_break_gcbg",
+  "has_variant",
+  "category",
+  "brand",
+  "standard_selling_rate",
+  "product_description_section",
+  "description",
+  "product_type",
+  "variants_tab",
+  "section_break_gdge",
+  "variant_attributes",
+  "variant_of"
+ ],
+ "fields": [
+  {
+   "fieldname": "pppccc",
+   "fieldtype": "Data",
+   "label": "Product Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "ppnn",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "basic_info_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Info"
+  },
+  {
+   "default": "1",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_gcbg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_variant",
+   "fieldtype": "Check",
+   "label": "Has Variant"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Category",
+   "options": "Product Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Brand",
+   "options": "Brand"
+  },
+  {
+   "fieldname": "standard_selling_rate",
+   "fieldtype": "Currency",
+   "label": "Standard Selling Rate"
+  },
+  {
+   "fieldname": "product_description_section",
+   "fieldtype": "Section Break",
+   "label": "Product Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_type",
+   "fieldtype": "Select",
+   "label": "Product Type",
+   "options": "\nTemplate\nVariant"
+  },
+  {
+   "fieldname": "variants_tab",
+   "fieldtype": "Tab Break",
+   "label": "Variants"
+  },
+  {
+   "fieldname": "variant_attributes",
+   "fieldtype": "Table",
+   "label": "Variant Attributes",
+   "options": "Product Attribute Table"
+  },
+  {
+   "fieldname": "variant_of",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Variant Of",
+   "options": "Product"
+  },
+  {
+   "depends_on": "eval:doc.has_variant==\"1\"",
+   "fieldname": "section_break_gdge",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-19 22:23:27.701828",
+ "modified_by": "Administrator",
+ "module": "Uptap",
+ "name": "Product",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "ppnn",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
