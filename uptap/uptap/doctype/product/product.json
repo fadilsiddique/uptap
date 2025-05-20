@@ -21,10 +21,24 @@
   "product_image",
   "description",
   "product_type",
+  "product_status",
+  "product_completeness",
+  "technical_specs_tab",
+  "wattage",
+  "cri",
+  "beam_angle",
+  "column_break_zalc",
+  "lumens",
+  "color_temprature",
+  "ip_rating",
   "variants_tab",
   "section_break_gdge",
   "variant_attributes",
-  "variant_of"
+  "variant_of",
+  "documentation_tab",
+  "product_manual",
+  "product_datasheet",
+  "installation_guide"
  ],
  "fields": [
   {
@@ -132,13 +146,83 @@
    "fieldname": "product_image",
    "fieldtype": "Attach Image",
    "label": "Product Image"
+  },
+  {
+   "fieldname": "technical_specs_tab",
+   "fieldtype": "Tab Break",
+   "label": "Technical Specs"
+  },
+  {
+   "fieldname": "wattage",
+   "fieldtype": "Data",
+   "label": "Wattage"
+  },
+  {
+   "fieldname": "cri",
+   "fieldtype": "Data",
+   "label": "CRI"
+  },
+  {
+   "fieldname": "beam_angle",
+   "fieldtype": "Data",
+   "label": "Beam Angle"
+  },
+  {
+   "fieldname": "column_break_zalc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lumens",
+   "fieldtype": "Data",
+   "label": "Lumens"
+  },
+  {
+   "fieldname": "color_temprature",
+   "fieldtype": "Data",
+   "label": "Color Temprature"
+  },
+  {
+   "fieldname": "ip_rating",
+   "fieldtype": "Data",
+   "label": "IP Rating"
+  },
+  {
+   "fieldname": "documentation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documentation"
+  },
+  {
+   "fieldname": "product_manual",
+   "fieldtype": "Attach",
+   "label": "Product Manual"
+  },
+  {
+   "fieldname": "product_datasheet",
+   "fieldtype": "Attach",
+   "label": "Product Datasheet"
+  },
+  {
+   "fieldname": "installation_guide",
+   "fieldtype": "Attach",
+   "label": "Installation Guide"
+  },
+  {
+   "fieldname": "product_status",
+   "fieldtype": "Select",
+   "label": "Product Status",
+   "options": "\nDraft\nReady\nPublished"
+  },
+  {
+   "fieldname": "product_completeness",
+   "fieldtype": "Percent",
+   "label": "Product Completeness"
   }
  ],
  "grid_page_length": 50,
  "image_field": "product_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-19 23:43:47.812055",
+ "modified": "2025-05-20 09:47:43.943809",
  "modified_by": "Administrator",
  "module": "Uptap",
  "name": "Product",
